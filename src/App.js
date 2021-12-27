@@ -76,6 +76,10 @@ function About() {
       </ul>
       <h3>Correo</h3>
       <p>branoleruiz@gmail.com</p>
+      <h3>Github</h3>
+      <a href="https://github.com/BraulioNR/Proinnovate">
+        https://github.com/BraulioNR/Proinnovate
+      </a>
     </div>
   )
 }
