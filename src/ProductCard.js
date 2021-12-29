@@ -23,10 +23,4 @@ class ProductCard extends React.Component {
   }
 }
 
-/*
-function ProductCard(props) {
-  const id = props.id
-  return console.log(id)
-} */
-
 export default ProductCard
