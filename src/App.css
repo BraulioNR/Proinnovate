@@ -17,8 +17,9 @@
   height: 120px;
   margin:20%;
 }
-.About h1{
+.ClassHead{
   text-align: center;
+
 }
 .About img{
   width: 120px;
@@ -33,14 +34,12 @@
   align-items: center;
 }
 
-
 .ProductDetail img{
   width: 20%;
   height: 20%;
   display:block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15%;
-
-  
+  margin-top: 15%; 
 }
+

@@ -56,30 +56,34 @@ function Home() {
 
 function About() {
   return (
-    <div className="About">
-      <a href="/">Home</a>
-      <h1>About</h1>
-      <h2>Braulio Bramir Nole Ruiz</h2>
-      <p>
-        Hola! :) soy un amante de la tecnologia de 22 años. Soy de Perú,
-        especificamente de Piura, un paraiso con lindas playas y un sol que
-        quema como ningun otro lugar. Tambien soy egresado de Ingenieria
-        Informatica
-      </p>
-      <img src={process.env.PUBLIC_URL + '/avataaars.png'} alt="avatar" />
-      <h3>¿Que he aprendido gracias a Make It Real y ProInnovate?</h3>
-      <ul>
-        <li>He aprendido los conceptos basicos de JS</li>
-        <li>POO en JS</li>
-        <li>React basico</li>
-        <li>Css Flexbox y Responsive basico</li>
-      </ul>
-      <h3>Correo</h3>
-      <p>branoleruiz@gmail.com</p>
-      <h3>Github</h3>
-      <a href="https://github.com/BraulioNR/Proinnovate">
-        https://github.com/BraulioNR/Proinnovate
-      </a>
+    <div>
+      <div className="ClassHead">
+        <a href="/">Home</a>
+        <h1>About</h1>
+      </div>
+      <div className="About">
+        <h2>Braulio Bramir Nole Ruiz</h2>
+        <p>
+          Hola! :) soy un amante de la tecnologia de 22 años. Soy de Perú,
+          especificamente de Piura, un paraiso con lindas playas y un sol que
+          quema como ningun otro lugar. Tambien soy egresado de Ingenieria
+          Informatica
+        </p>
+        <img src={process.env.PUBLIC_URL + '/avataaars.png'} alt="avatar" />
+        <h3>¿Que he aprendido gracias a Make It Real y ProInnovate?</h3>
+        <ul>
+          <li>He aprendido los conceptos basicos de JS</li>
+          <li>POO en JS</li>
+          <li>React basico</li>
+          <li>Css Flexbox y Responsive basico</li>
+        </ul>
+        <h3>Correo</h3>
+        <p>branoleruiz@gmail.com</p>
+        <h3>Github</h3>
+        <a href="https://github.com/BraulioNR/Proinnovate">
+          https://github.com/BraulioNR/Proinnovate
+        </a>
+      </div>
     </div>
   )
 }
@@ -111,10 +115,12 @@ function ProductDetail() {
   if (loading) return <Loading />
   return (
     <div>
-      <a href="/">Home</a>
-      <br></br>
-      <a href="/about">About</a>
-      <h1>Product Detail </h1>
+      <div className="ClassHead">
+        <a href="/">Home</a>
+        <br></br>
+        <a href="/about">About</a>
+        <h1>Product Detail </h1>
+      </div>
       <div className="ProductDetail">
         <section className="SectionImg">
           <img src={details.image} alt={details.id} />
