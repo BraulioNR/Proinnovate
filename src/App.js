@@ -88,7 +88,7 @@ function ProductDetail() {
   const { id } = useParams()
   const [details, setDetail] = useState({})
   const [loading, setLoading] = useState(false)
-
+  const [rating, setRating] = useState({})
   useEffect(() => {
     axios({
       method: 'GET',
@@ -97,6 +97,8 @@ function ProductDetail() {
     })
       .then(({ data }) => {
         setDetail(data)
+        console.log(data)
+        setRating(data.rating)
       })
       .catch((error) => {
         console.log(error)
@@ -105,7 +107,7 @@ function ProductDetail() {
         setLoading(false)
       })
   }, [id])
-
+  // const { rating } = details
   if (loading) return <Loading />
   return (
     <div>
@@ -114,13 +116,18 @@ function ProductDetail() {
       <a href="/about">About</a>
       <h1>Product Detail </h1>
       <div className="ProductDetail">
-        <h1>Id: {details.id}</h1>
-        <h4>{details.title}</h4>
-        <h4>Price: {details.price}</h4>
-        <h4>Category: {details.category}</h4>
-        <img src={details.image} alt={details.id} />
-
-        <h4>{details.description}</h4>
+        <section className="SectionImg">
+          <img src={details.image} alt={details.id} />
+        </section>
+        <section className="SectionDetail">
+          <h1>Id: {details.id}</h1>
+          <h4>{details.title}</h4>
+          <h4>Price: {details.price}</h4>
+          <h4>Category: {details.category}</h4>
+          <h4>Rate: {rating.rate}</h4>
+          <h4>Orders: {rating.count}</h4>
+          <h4>{details.description}</h4>
+        </section>
       </div>
     </div>
   )

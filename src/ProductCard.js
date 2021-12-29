@@ -5,7 +5,7 @@ class ProductCard extends React.Component {
     return (
       <div>
         <img
-          className="ProductClass"
+          className="ProductClassImg"
           src={this.props.image}
           alt={this.props.title}
         />
