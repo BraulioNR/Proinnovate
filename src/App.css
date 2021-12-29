@@ -4,6 +4,34 @@
   text-align: center;
   
 }
+
+.ProductClassCard{
+  border: 1px solid #000000;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  align-content: center ;
+  align-items: center;
+  display: grid;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  word-break:break-all;
+  width: 25%;
+  height: 350px;
+}
+
+.ProductClassCard a{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: blue;
+}
+
 .ProductList{
   text-align: center;
   display: flex;

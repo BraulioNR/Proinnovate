@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 class ProductCard extends React.Component {
   render() {
     return (
-      <div>
+      <div className="ProductClassCard">
         <img
           className="ProductClassImg"
           src={this.props.image}
           alt={this.props.title}
         />
-        <a href={`/detalle/:${this.props.id}`}>{this.props.id}</a>
+        <a href={`/detalle/:${this.props.id}`}>{this.props.title}</a>
       </div>
     )
   }
