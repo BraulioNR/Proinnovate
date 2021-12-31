@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+c-section{
+  margin: 0 auto;
+}
+
+.c-section__title{
+  text-align:center;
+  color:white;
+  padding:1%;
+  margin: 0 0.5%;
+  margin-bottom:2%;
+  background: linear-gradient(to bottom, grey 15%, black 15%);
+  font-family: 'Roboto Slab', serif;
+  font-size:150%;
+}
+.c-section__title span{
+  margin:0;
+}
+
+.c-services{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-left:0;
+  /*padding:0;
+  margin:0;*/
+  list-style-type:none;
+}
+.c-services__item{
+  background-color:#EEEEEE;
+  margin:1%;
+  padding:5%;
+}
+.c-services__item h3{
+  margin-left:9%;
+  font-family: "Constantia"; src: url("//db.onlinewebfonts.com/t/0b9856633d4311a19df074ea509d8390.eot");
+}
+.c-services__item p{
+  text-align: left;
+  font:100% sans-serif;
+}
+.c-services__item:hover{
+ box-shadow: 0 5px 5px 0 #E0E0E0;
+}
