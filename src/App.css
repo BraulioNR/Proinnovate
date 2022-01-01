@@ -1,8 +1,46 @@
-.Home {
-  margin: 1rem;
+body{
+  margin: 0;
+}
+.header{
+  background: #333;
+  color:white;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+}
+.containerHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
   padding: 1rem;
-  text-align: center;
-  
+  letter-spacing: 5px;
+  font-size: 1.3em;
+}
+.navbar ul{
+  list-style: none;
+  text-align:right;
+}
+
+.navbar ul li{
+  display: inline-block;
+}
+.navbar ul li a{
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.navbar ul li a:hover{
+  background: grey;
+}
+.Home {
+  text-align: center;  
 }
 
 .ProductClassCard{
@@ -39,12 +77,20 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem;
+  padding: 1rem;
 }
+
+.ProductClassCard:hover{
+  box-shadow: 0 5px 5px 0 #E0E0E0;
+}
+
 .ProductClassImg{
   width: 120px;
   height: 120px;
   margin:20%;
 }
+
 .ClassHead{
   text-align: center;
 
@@ -70,4 +116,3 @@
   margin-right: auto;
   margin-top: 15%; 
 }
-

@@ -36,8 +36,10 @@ function Home() {
   if (loading) return <Loading />
   return (
     <div className="Home">
-      <a href="/about">About</a>
-      <h2>Home</h2>
+      <div className="ClassHead">
+        <Header></Header>
+        <br></br>
+      </div>
       <div className="ProductList">
         {images.map((image) => {
           return (
@@ -56,12 +58,12 @@ function Home() {
 
 function About() {
   return (
-    <div>
+    <div className="About">
       <div className="ClassHead">
-        <a href="/">Home</a>
-        <h1>About</h1>
+        <Header></Header>
+        <br></br>
       </div>
-      <div className="About">
+      <div>
         <h2>Braulio Bramir Nole Ruiz</h2>
         <p>
           Hola! :) soy un amante de la tecnologia de 22 años. Soy de Perú,
@@ -116,10 +118,8 @@ function ProductDetail() {
   return (
     <div>
       <div className="ClassHead">
-        <a href="/">Home</a>
+        <Header></Header>
         <br></br>
-        <a href="/about">About</a>
-        <h1>Product Detail </h1>
       </div>
       <div className="ProductDetail">
         <section className="SectionImg">
@@ -135,6 +135,30 @@ function ProductDetail() {
           <h4>{details.description}</h4>
         </section>
       </div>
+    </div>
+  )
+}
+
+function Header() {
+  return (
+    <div>
+      <header className="header">
+        <div className="containerHeader">
+          <a href="/" className="logo">
+            FakeMarket
+          </a>
+          <nav className="navbar">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/about">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </div>
   )
 }
