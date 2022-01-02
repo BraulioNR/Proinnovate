@@ -44,7 +44,7 @@ body{
 }
 
 .ProductClassCard{
-  border: 1px solid #000000;
+  border: 1px solid #7c7c7c;
   border-radius: 7px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -63,11 +63,22 @@ body{
 }
 
 .ProductClassCard a{
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
   text-decoration: none;
-  color: blue;
+  color: black;
+}
+
+.ProductClassCard button{
+  border-radius: 7px;
+  width: 80px;
+  margin-left: 180px;
+  margin-top: 40px;
+  background-color: #3065AC;
+  color: white;
+  border-color: white;
+}
+
+.ProductClassCard button:hover{
+  background: #4474b4;
 }
 
 .ProductList{
@@ -115,4 +126,8 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin-top: 15%; 
+}
+.ProductClassCard img{
+  margin: auto;
+  margin-bottom: 10px;
 }
