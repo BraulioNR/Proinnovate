@@ -128,11 +128,11 @@ function ProductDetail() {
         <section className="SectionDetail">
           <h1>Id: {details.id}</h1>
           <h4>{details.title}</h4>
-          <h4>Price: {details.price}</h4>
+          <h4>Price: ${details.price}</h4>
           <h4>Category: {details.category}</h4>
           <h4>Rate: {rating.rate}</h4>
           <h4>Orders: {rating.count}</h4>
-          <h4>{details.description}</h4>
+          <p>{details.description}</p>
         </section>
       </div>
     </div>
